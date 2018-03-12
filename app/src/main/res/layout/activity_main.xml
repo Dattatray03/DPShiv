@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.syngenta.t962073.app.MainActivity">
+
+    <EditText
+        android:id="@+id/edtFirstNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter First No#"
+        android:digits="0123456789"
+        android:maxLength="5"
+        android:inputType="number"
+        android:layout_margin="5dp"
+        android:imeOptions="actionNext"
+        />
+
+    <EditText
+        android:id="@+id/edtSecoundNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Second No#"
+        android:digits="0123456789"
+        android:maxLength="5"
+        android:inputType="number"
+        android:layout_margin="5dp"
+        android:layout_below="@id/edtFirstNum"
+
+        android:nextFocusDown="@id/btnAdd"
+        />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add "
+        android:layout_margin="5dp"
+        android:layout_below="@id/edtSecoundNum"
+        />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Addition !"
+        android:layout_margin="5dp"
+        android:layout_below="@id/btnAdd"
+        />
+
+</RelativeLayout>
